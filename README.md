@@ -13,3 +13,19 @@ cc food.c -o prog
 ### unique_snowflakes
 
 * https://dmoj.ca/problem/cco07p2
+
+```
+cc unique_snowflakes.c -o prog
+
+./prog < snowflakes.txt
+```
+
+### hash_function
+
+* one-at-a-time (oaat) hash function implementation.
+
+```
+cc oaat.c -o prog
+
+./prog 
+```
