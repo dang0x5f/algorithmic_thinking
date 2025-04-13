@@ -1,6 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #define SIZE 100000
+
+typedef struct snowflake_node {
+    int snowflake[6];
+    struct snowflake_node *next;
+} snowflake_node;
 
 void test1(void);
 void identify_identical(int [], int);
@@ -15,14 +21,71 @@ void test3(void);
 void test4(void);
 void identify_identical2(int [][6], int);
 
+void test5(void);
+int code(int []);
+void identify_identical3(snowflake_node *[]);
+
+
 int main(void)
 {
     /* test1(); */
     /* test2(); */
     /* test3(); */
-    test4();
+    /* test4(); */
+    test5();
     return(0);
 }
+
+void 
+test5(void)
+{
+    static snowflake_node *snowflakes_test5[SIZE] = {NULL};
+    snowflake_node *snow; 
+    int n, i, j, snowflake_code;
+    scanf("%d", &n);
+    for(i = 0; i < n; i++){
+        snow = malloc(sizeof(snowflake_node));
+        if(snow == NULL){
+            fprintf(stderr, "malloc error\n");
+            exit(1);
+        }
+        for(j = 0; j < 6; j++)
+            scanf("%d",&snow->snowflake[j]);
+        snowflake_code = code(snow->snowflake);
+        snow->next = snowflakes_test5[snowflake_code];
+        snowflakes_test5[snowflake_code] = snow;
+    }
+    identify_identical3(snowflakes_test5);
+}
+
+void 
+identify_identical3(snowflake_node *snowflakes[])
+{
+    snowflake_node *node1, *node2;
+    int i;
+    for(i = 0; i < SIZE; i++){
+        node1 = snowflakes[i];
+        while(node1 != NULL){
+            node2 = node1->next;
+            while(node2 != NULL){
+                if(are_identical(node1->snowflake,node2->snowflake)){
+                    printf("Twin snowflakes found.\n");
+                    return;
+                }
+                node2 = node2->next;
+            }
+            node1 = node1->next;
+        }
+    }
+    printf("No two snowflakes are alike.\n");
+}
+
+int
+code(int snowflake[])
+{
+    return(snowflake[0] + snowflake[1] + snowflake[2] +
+           snowflake[3] + snowflake[4] + snowflake[5]) % SIZE;
+} 
 
 void 
 test4(void)
