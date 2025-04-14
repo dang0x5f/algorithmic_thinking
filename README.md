@@ -29,3 +29,16 @@ cc oaat.c -o prog
 
 ./prog 
 ```
+
+### compound_words
+
+* https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1332
+
+```
+cc compound_words.c -o prog
+
+./prog < words.txt
+```
+
+---
+Reference: https://stackoverflow.com/questions/4758175/how-to-use-gdb-with-input-redirection
