@@ -22,7 +22,7 @@ cc unique_snowflakes.c -o prog
 
 ### 01-hash_function
 
-* one-at-a-time (oaat) hash function implementation.
+* one-at-a-time (oaat) hash function implementation[^1].
 
 ```
 cc oaat.c -o prog
@@ -52,3 +52,4 @@ cc spelling_check.c -o prog
 
 ---
 Reference: https://stackoverflow.com/questions/4758175/how-to-use-gdb-with-input-redirection
+[^1]: https://burtleburtle.net/bob/hash/doobs.html
