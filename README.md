@@ -50,6 +50,17 @@ cc spelling_check.c -o prog
 ./prog < words.txt
 ```
 
+### 02-halloween_haul
+
+* https://dmoj.ca/problem/dwite12c1p4
+
 ---
-Reference: https://stackoverflow.com/questions/4758175/how-to-use-gdb-with-input-redirection
+
+## notes
+
+* Stdin gdb redirect[^999].
+
+---
+
 [^1]: https://burtleburtle.net/bob/hash/doobs.html
+[^999]: https://stackoverflow.com/questions/4758175/how-to-use-gdb-with-input-redirection
