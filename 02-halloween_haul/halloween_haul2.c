@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #define SIZE 255
-#define TEST_CASES 1
+#define TEST_CASES 3
 
 typedef struct node {
     int candy;
