@@ -54,7 +54,6 @@ cc spelling_check.c -o prog
 
 * https://dmoj.ca/problem/dwite12c1p4
 
-
 ```sh
 cc halloween_haul.c -o prog
 
@@ -66,6 +65,10 @@ cc halloween_haul2.c -o prog
 
 ./prog < tree.txt
 ```
+
+### 02-descendant_distance
+
+* https://dmoj.ca/problem/ecna05b
 
 ---
 
