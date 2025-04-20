@@ -70,6 +70,12 @@ cc halloween_haul2.c -o prog
 
 * https://dmoj.ca/problem/ecna05b
 
+```sh
+cc descendant_distance.c -o prog
+
+./prog < family_trees.txt
+```
+
 ---
 
 ## notes
