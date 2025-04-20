@@ -80,8 +80,23 @@ cc descendant_distance.c -o prog
 
 * https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1406
 
+###### recursive
 ```sh
 cc burger_fervor1.c -o prog
+
+./prog < burger_input.txt
+```
+
+###### recursive
+```sh
+cc burger_fervor2.c -o prog
+
+./prog < burger_input.txt
+```
+
+###### memoization
+```sh
+cc burger_fervor3.c -o prog
 
 ./prog < burger_input.txt
 ```
