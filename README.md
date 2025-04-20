@@ -4,7 +4,7 @@
 
 * https://dmoj.ca/problem/lkp18c2p1
 
-```
+```sh
 cc food.c -o prog
 
 ./prog < food.txt
@@ -14,7 +14,7 @@ cc food.c -o prog
 
 * https://dmoj.ca/problem/cco07p2
 
-```
+```sh
 cc unique_snowflakes.c -o prog
 
 ./prog < snowflakes.txt
@@ -24,7 +24,7 @@ cc unique_snowflakes.c -o prog
 
 * one-at-a-time (oaat) hash function implementation[^1].
 
-```
+```sh
 cc oaat.c -o prog
 
 ./prog 
@@ -34,7 +34,7 @@ cc oaat.c -o prog
 
 * https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1332
 
-```
+```sh
 cc compound_words.c -o prog
 
 ./prog < words.txt
@@ -44,7 +44,7 @@ cc compound_words.c -o prog
 
 * https://codeforces.com/problemset/problem/39/J
 
-```
+```sh
 cc spelling_check.c -o prog
 
 ./prog < words.txt
@@ -74,6 +74,16 @@ cc halloween_haul2.c -o prog
 cc descendant_distance.c -o prog
 
 ./prog < family_trees.txt
+```
+
+### 03-burger_fervor
+
+* https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1406
+
+```sh
+cc burger_fervor1.c -o prog
+
+./prog < burger_input.txt
 ```
 
 ---
