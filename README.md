@@ -101,9 +101,16 @@ cc burger_fervor3.c -o prog
 ./prog < burger_input.txt
 ```
 
+###### dynamic programming
+```sh
+cc burger_fervor4.c -o prog
+
+./prog < burger_input.txt
+```
+
 ---
 
-## notes
+### notes
 
 * Stdin gdb redirect[^999].
 
