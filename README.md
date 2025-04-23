@@ -108,6 +108,10 @@ cc burger_fervor4.c -o prog
 ./prog < burger_input.txt
 ```
 
+### 03-moneygrubbers
+
+* https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1921
+
 ---
 
 ### notes
