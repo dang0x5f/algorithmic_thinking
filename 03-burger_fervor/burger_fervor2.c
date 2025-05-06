@@ -1,4 +1,6 @@
 #include <stdio.h>
+#define SBT_IMPLEMENTATION
+#include "sbt.h"
 
 unsigned long long total_calls;
 
@@ -10,8 +12,11 @@ int
 main(void)
 {
     int m, n, t;
-    while(scanf("%d%d%d", &m, &n, &t) != -1)
+    while(scanf("%d%d%d", &m, &n, &t) != -1){
+        start_sbt();
         solve(m,n,t);
+        end_sbt();
+    }
     return(0);
 }
 

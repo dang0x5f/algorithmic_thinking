@@ -1,4 +1,6 @@
 #include <stdio.h>
+#define SBT_IMPLEMENTATION
+#include "sbt.h"
 
 int max(int, int);
 int solve_t(int, int, int);
@@ -8,8 +10,11 @@ int
 main(void)
 {
     int m, n, t;
-    while(scanf("%d%d%d", &m, &n, &t) != -1)
+    while(scanf("%d%d%d", &m, &n, &t) != -1){
+        start_sbt();
         solve(m,n,t);
+        end_sbt();
+    }
     return(0);
 }
 
